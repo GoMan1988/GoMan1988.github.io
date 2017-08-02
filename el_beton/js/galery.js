@@ -44,39 +44,39 @@ $(document).ready(function(){
 	});
 });
 
-			var map;
-			// координаты карты
-		    var oz = new google.maps.LatLng(54.008732,27.283454);
-		    var MY_MAPTYPE_ID = 'custom_style';
-		    function initialize() {
-		     // стили 
-		     var featureOpts = [ 
-		          { "stylers": 
-					        [
-		                { "hue": "#f6b362" },
-								    { "saturation": 100 },
-								    { "gamma": 0.83 }
-		              ]
-		          } ];
-		      var mapOptions = {
-		        zoom: 17,
-		        center: oz,
-		        scrollwheel: false,
-		        navigationControl: false,
-		        mapTypeControl: false,
-		        scaleControl: false,
-		        draggable: false,
-		        mapTypeControlOptions: {
-		          mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
-		        },
-		        mapTypeId: MY_MAPTYPE_ID
-		      };
+			// var map;
+			// // координаты карты
+		 //    var oz = new google.maps.LatLng(54.008732,27.283454);
+		 //    var MY_MAPTYPE_ID = 'custom_style';
+		 //    function initialize() {
+		 //     // стили 
+		 //     var featureOpts = [ 
+		 //          { "stylers": 
+			// 		        [
+		 //                { "hue": "#f6b362" },
+			// 					    { "saturation": 100 },
+			// 					    { "gamma": 0.83 }
+		 //              ]
+		 //          } ];
+		 //      var mapOptions = {
+		 //        zoom: 17,
+		 //        center: oz,
+		 //        scrollwheel: false,
+		 //        navigationControl: false,
+		 //        mapTypeControl: false,
+		 //        scaleControl: false,
+		 //        draggable: false,
+		 //        mapTypeControlOptions: {
+		 //          mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
+		 //        },
+		 //        mapTypeId: MY_MAPTYPE_ID
+		 //      };
 
-		      map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-		      var styledMapOptions = {
-		        name: 'Custom Style'
-		      };
-		      var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
-		      map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
-		    }
-		    initialize();
+		 //      map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+		 //      var styledMapOptions = {
+		 //        name: 'Custom Style'
+		 //      };
+		 //      var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
+		 //      map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+		 //    }
+		 //    initialize();
