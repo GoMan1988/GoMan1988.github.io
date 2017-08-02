@@ -804,7 +804,15 @@ p
 
 
 
+@media all and (min-width: 554px){
+    .blok_tel_1, .blok_tel_2 {
+        display: none;
+    }
 
+    .logo {
+        margin: 20px 0;
+    }
+}
 
 
 
@@ -1187,6 +1195,21 @@ h1
 
 
 @media (max-width: 700px){
+    h1 
+    {
+        font-size: 25px;
+    }
+
+
+    #SliderContent {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .left_saitbar {
+        display: none;
+    }
 
 	.open-menu
 	{
