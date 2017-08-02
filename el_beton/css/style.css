@@ -434,14 +434,14 @@ ul
 {
 
         width: 100%;
-        margin: 1em auto;
+        margin: 0em auto;
         text-align: center;
 }
 
 
 #atestat
 {
-  
+        float: none;
         width: 10em;
         margin:0.5em 1.5em;
 }
@@ -1195,6 +1195,13 @@ h1
 
 
 @media (max-width: 700px){
+    #iso, #atestat
+    {
+        float: left;
+        width: 100%;
+        margin: 10px 0;
+    }
+
     h1 
     {
         font-size: 25px;
